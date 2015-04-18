@@ -64,24 +64,26 @@
 						developing my coding skills. Among my technical goals, I wanted to learn python, use a noSQL database, 
 						use some javascript libraries, and make a few maps. 						
 						The Maryland Institute for Technology in the Humanities, at University of Maryland hosted me
-						and provided me with advice and encouragement as I worked on this project I'm going to share. 
+						and provided me with advice and encouragement as I worked on this project I'm going to share.
+						
+						I was interested in ways to explore and browse image content from large digital collections. Also, what is it like to 
+					    combine data from DPLA with other content? 
+					     
 					</aside>
 				</section>
 
-				<section data-background="sanfranppoc2.jpg">
+				<section data-background="marketstdpla.jpg">
 					
 					<aside class="notes">
-					    I was interested in ways to explore and browse image content from large digital collections. Also, what is it like to 
-					    combine data from DPLA with other content? 
-					    
 					    I chose to focus on images of catastrophe, specifically natural disasters. There are a lot of images in DPLA and in other collections of the effects
-					    of earthquakes, hurricanes, floods, on our surroundings, especially built environment...
+					    of earthquakes, hurricanes, floods, on our surroundings, especially built environment ... and of how people cope in those events. 
+					    
 					</aside>
 				</section>
 				
-				<section data-background="collapsedporch.jpeg">
+				<section data-background="sanfranppoc2.jpg">
 					<aside class="notes">
-					... and of how people cope in those events. 
+					and this is from the Library of Congress.
 					</aside>
 				</section>
 					
@@ -257,7 +259,7 @@ forest-2015-04-01T10:30:12.053349-1-ppoc.json
 				
 				<section>
 			  		<a href="http://disasterview.laurawrubel.org" target="_blank"><img src="app_home.png"></a>
-			  		<aside class="notes"> The app is using Flask as a lightweight web framework, with PyMongo to connect to MongoDB. 
+			  		<aside class="notes"> I used Flask as a lightweight web framework, with PyMongo to connect to MongoDB. 
 			  		
 			  		You can browse by disaster type. (click on headings) It uses Masonry JS, with some infinite scroll. 
 			  		Thumbnails are sorted by date, but I would have to do some cleanup to make it consistent. 
@@ -267,7 +269,7 @@ forest-2015-04-01T10:30:12.053349-1-ppoc.json
 			  		You can select items and create a subset of data across the disasters. All of the ids are in the URL, so it's bookmarkable.
 			        
 			        MAP:
-			        Map, made with Leaflet JS and the coordinates from DPLA's spatial data. [Geocoding data is difficult to do 100%
+			        Map, made with Leaflet JS and the coordinates from DPLA's spatial data. ZOOM in. [Geocoding data is difficult to do 100%
 			        accurately, there are issues I had to deal with like coordinates for the center of the US being included. I know
 			        DPLA is working on a new approach to geocoding based on GeoNames data and is fully aware of and addressing these kinds 
 			        of issues. 
@@ -275,31 +277,22 @@ forest-2015-04-01T10:30:12.053349-1-ppoc.json
 			        Another example on an issues is that some records that are
 			        matched up with locations outside of the US, when they're US images, so I used a rough bounding box for the US
 			        to filter those out of the map, although I kept the records in the image sets.  ]
-			        
-			        IF THERE's TIME:
-			        For the LC data, I was going to try to use GeoNames with the subject headings geographic data, but it turns out LC
-			        is geocoding their data using their new online Gazetteer. I know this is DPLAfest, but I wanted to show something with LC's data: you can add 
-			        ?fo=json to any item in their new search results, and get at that information. Their new JSON response isn't documented yet,
-			        but it available to use.
+			      
 			        </aside>
 				</section>
-				
+
 				<section>
-				 App: <a href="http://disasterview.laurawrubel.org">http://disasterview.laurawrubel.org</a>
-				 Code: <a href="https://github.com/lwrubel/disasterview">https://github.com/lwrubel/disasterview</a>
+				 <p>Disaster View: <a href="http://disasterview.laurawrubel.org">http://disasterview.laurawrubel.org</a></p>
+				 <p>Code: <a href="https://github.com/lwrubel/disasterview">https://github.com/lwrubel/disasterview</a></p>
 				 <aside class="notes">
-				 The app is available for the time being here. 
+				 The app is available for the time being here. I'd be interested to hear 
+				 any thoughts or questions you might have about this approach or the technology involved. 
 				 </aside>
-				</section>
-				
-				<section>
 					<h3>Photo credits</h3>
-					<ul>
-						<li><a href="http://www.loc.gov/pictures/item/det1994011902/PP/">"Post and Montgomery sts., corner of Market, San Francisco, Cal."</a>, c.1906. Library of Congress Prints and Photographs Division.</li>
-						
-						<li><a href="http://cdm16016.contentdm.oclc.org/cdm/ref/collection/p15077coll4/id/13">"Group Posing on Collapsed Porch"</a>, c1906. 
-							Pawleys Island Civic Association, Georgetown County Digital Library.</li>
-					</ul>
+					<small><ul>
+						<li><a href="http://digital.infodepot.org/cdm/ref/collection/wlsc/id/703">"Market Street Ravaged and Laid Waste Without Mercy--Earthquake and Fire Disaster, San Francisco, April 18, 1906"</a>. William Lynch Stereoview Collection, Spartanburg County Public Libraries.</li>
+						<li><a href="http://www.loc.gov/pictures/item/det1994011902/PP/">"Post and Montgomery sts., corner of Market, San Francisco, Cal."</a>, c.1906. Library of Congress Prints and Photographs Division.</li>	
+					</ul></small>
 				</section>
 					
 						
